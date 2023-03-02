@@ -5,7 +5,7 @@ $slateGray : rgb(119, 136, 153);
 .app {
     display: flex;
     justify-content: center;
-    
+
 
 
     .container {
@@ -40,131 +40,134 @@ $slateGray : rgb(119, 136, 153);
                 width: 240px;
                 gap: 20px;
                 border-radius: 2px;
-            }
-
-            input {
-                padding: 10px;
-                border: none;
-                border-bottom: 1px solid gray;
-                background-color: #FFF5EE;
-            }
-
-            button {
-                padding: 10px;
-                border: none;
-                border-radius: 3px;
-                background-color: #FFDEAD;
-                color: gray;
-                cursor: pointer;
-            }
-
-            button:hover {
-                background-color: #BC8F8F;
-                color: white;
-            }
-
-            button:focus {
-                background-color: #FFDEAD;
-                color: gray;
-            }
-
-            p {
-                font-size: 12px;
-                color: red;
-                text-align: center;
-            }
-
-            span {
-                font-size: 12px;
-                text-align: center;
-            }
-        }
-    }
-
-    // NAVBAR
-
-    .navbar {
-
-        .container {
-            padding: 10px 0px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #FFDEAD;
-            border-bottom-left-radius: 7px;
-            border-bottom-right-radius: 7px;
 
 
-
-
-            .logo {
-                img {
-                    width: 90px;
-                    background-color: $slateGray;
+                input {
+                    padding: 10px;
                     border: none;
-                    border-radius: 10px;
-                    margin-left: 20%;
-                    
+                    border-bottom: 1px solid gray;
+                    background-color: #FFF5EE;
                 }
 
-            }
+                button {
+                    padding: 10px;
+                    border: none;
+                    border-radius: 3px;
+                    background-color: #FFDEAD;
+                    color: gray;
+                    cursor: pointer;
+                }
 
-            .links {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                margin-right: 3%;
+                button:hover {
+                    background-color: #BC8F8F;
+                    color: white;
+                }
 
-                h6 {
-                    font-size: 16px;
-                    font-weight: 300;
+                button:focus {
+                    background-color: #FFDEAD;
+                    color: gray;
+                }
+
+                p {
+                    font-size: 12px;
+                    color: red;
+                    text-align: center;
                 }
 
                 span {
-                    cursor: pointer;
-                    font-size: 20px;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+
+
+        // NAVBAR
+
+        .navbar {
+
+            .container {
+                padding: 10px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #FFDEAD;
+                border-bottom-left-radius: 7px;
+                border-bottom-right-radius: 7px;
+
+
+
+
+                .logo {
+                    img {
+                        width: 90px;
+                        background-color: $slateGray;
+                        border: none;
+                        border-radius: 10px;
+                        margin-left: 20%;
+
+                    }
+
                 }
 
-                .write {
-                    background-color: $slateGray;
-                    width: 70px;
-                    height: 50px;
-                    border-radius: 10px;
+                .links {
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    font-weight: 300;
-                    color: white;
-                    border: 1px solid;
+                    gap: 10px;
+                    margin-right: 3%;
 
-                    &:hover {
-                        
-                        background-color: #BC8F8F;
+                    h6 {
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+
+                    span {
+                        cursor: pointer;
+                        font-size: 20px;
+                    }
+
+                    .write {
+                        background-color: $slateGray;
+                        width: 70px;
+                        height: 50px;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 300;
                         color: white;
                         border: 1px solid;
+
+                        &:hover {
+
+                            background-color: #BC8F8F;
+                            color: white;
+                            border: 1px solid;
+                        }
                     }
                 }
             }
         }
-    }
-    // FOOTER 
 
-    footer{
-        background-color: #FFDEAD;
-        margin-top: 100px;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 12px;
+        // FOOTER 
+
+        footer {
+            background-color: #FFDEAD;
+            margin-top: 100px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
 
 
-        img{
-            width: 50px;
-            background-color: $slateGray;
-            border: none;
-            border-radius: 10px;
-            margin-left: 5%;
+            img {
+                width: 50px;
+                background-color: $slateGray;
+                border: none;
+                border-radius: 10px;
+                margin-left: 5%;
+            }
         }
     }
 }

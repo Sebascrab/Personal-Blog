@@ -11,10 +11,10 @@ const Navbar = () => {
                 </div>
                 <div className="links">
                     <Link className='link' to="/?cat=art">
-                        <h6>ART</h6>
+                        <h6>Art</h6>
                     </Link>
                     <Link className='link' to="/?cat=food">
-                        <h6>FOOD</h6>
+                        <h6>Food</h6>
                     </Link>
                     <Link className='link' to="/?cat=Science">
                         <h6>Science</h6>
