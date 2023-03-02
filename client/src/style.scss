@@ -1,8 +1,81 @@
 
 
+
+$slateGray : 	rgb(119,136,153);
+
+
+
 .app{
 
+    
+
     .container{
-        
+
+
+        // LOGIN & REGISTER
+
+        .auth{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: $slateGray;
+
+            h1{
+                font-size: 39px;
+                color: #FFDEAD;
+                margin-bottom: 20px;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                padding: 50px;
+                background-color: 	#FFF5EE;
+                width: 200px;
+                gap: 20px;
+                border-radius: 2px;
+            }
+
+            input{ 
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid gray;
+                background-color: #FFF5EE;
+            }
+
+            button{
+                padding: 10px;
+                border: none;
+                border-radius: 3px;
+                background-color: #FFDEAD;
+                color: gray;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: #BC8F8F;
+                color: white;
+            }
+
+            button:focus{
+                background-color: #FFDEAD;
+                color: gray;
+            }
+
+            p{
+                font-size: 12px;
+                color: red;
+                text-align: center;
+            }
+
+            span{
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+
+
     }
 }
