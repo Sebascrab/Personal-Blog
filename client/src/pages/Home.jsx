@@ -24,10 +24,11 @@ const Home = () => {
         },
         {
             id: 4, 
-            title: "Working with Third-Pary-Api's", 
+            title: "Third-Pary-Api's", 
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             img: "https://c.pxhere.com/photos/83/8e/camera_photography_lens_equipment_photographer_technology_digital_photographic-1074009.jpg!d" 
         },
+        
     ]
     return (
         <div className='home'>
@@ -38,11 +39,11 @@ const Home = () => {
                             <img src={post.img} alt="" />
                         </div>
                         <div className="content">
-                            <Link to={`/post/${post.id}`}>
+                            <Link className='link' to={`/post/${post.id}`}>
                             <h1>{post.title}</h1>
+                            </Link>
                             <p>{post.desc}</p>
                             <button>Read More</button>
-                            </Link>
                         </div>
                     </div>
                     ))}
