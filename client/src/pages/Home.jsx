@@ -29,7 +29,7 @@ const Home = () => {
             img: "https://c.pxhere.com/photos/83/8e/camera_photography_lens_equipment_photographer_technology_digital_photographic-1074009.jpg!d" 
         },
         
-    ]
+    ];
     return (
         <div className='home'>
             <div className='posts'>

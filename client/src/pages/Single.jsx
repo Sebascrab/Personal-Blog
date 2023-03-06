@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+import Menu from '../components/Menu'
 
 import Edit from '../images/Edit-Icon.png';
 import Delete from '../images/Delete-Icon-3.jpeg';
@@ -15,12 +17,23 @@ const Single = () => {
                         <p>Posted 2 days ago</p>
                     </div>
                     <div className="edit">
+                        <Link to={`/write?edit=2`}>
                         <img src={Edit} alt="edit button" />
+                        </Link>
                         <img src={Delete} alt="delete button" />
                     </div>
                 </div>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    <br />
+                    <br />
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                    </p>
+                </p>
             </div>
-            <div className="menu">m</div>
+            <Menu />
         </div>
     )
 }
