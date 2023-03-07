@@ -1,10 +1,15 @@
-const express = require('express');
-
+import express from 'express';
+import postRoutes from './routes/posts.js'
 const app = express();
 
 
 // middleware for parsing json data
 app.use(express.json());
+
+// Routes
+app.use('/api/posts', postRoutes)
+
+
 
 
 
