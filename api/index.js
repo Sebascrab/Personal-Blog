@@ -1,7 +1,7 @@
 import express from 'express';
 import postRoutes from './routes/posts.js'
 import authRoutes from './routes/auth.js'
-import postRoutes from './routes/users.js'
+import usersRoutes from './routes/users.js'
 const app = express();
 
 
