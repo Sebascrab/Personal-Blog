@@ -1,10 +1,19 @@
+import {db} from '../db.js';
 
-
-
+// all posts    
 export const getPosts = (req, res) => {
-   
+   const q = req.query.cat 
+   ? "SELECT * FROM posts WHERE cat=?" 
+   : "SELECT * FROM posts";
+
+   db.query(q, [req.query.cat], (err, data) => {
+       if (err) {
+           return res.json(err)
+       } return res.status(200).json(data);
+   })
 }
 
+// single post
 export const getPost = (req, res) => {
     res.json('from controller')
 }
