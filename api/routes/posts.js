@@ -17,7 +17,7 @@ router.get('/', getPosts)
 router.get('/:id', getPost)
 router.post('/', addPost)
 router.delete('/:id', deletePost)
-router.update('/:id', updatePost)
+router.put('/:id', updatePost)
 
 
 export default router

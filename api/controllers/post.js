@@ -2,7 +2,7 @@
 
 
 export const getPosts = (req, res) => {
-    const q = 
+   
 }
 
 export const getPost = (req, res) => {
