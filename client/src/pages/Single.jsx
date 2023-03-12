@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import Menu from '../components/Menu'
 
 import Edit from '../images/Edit-Icon.png';
@@ -67,7 +67,7 @@ const Single = () => {
                 <h1>{post.title}</h1>
                 <p>{post.desc}</p>
             </div>
-            <Menu />
+            <Menu cat={post.cat} />
         </div>
     )
 }
