@@ -11,10 +11,10 @@ const Write = () => {
 
     const state = useLocation().state
 
-    const [value, setValue] = useState(state?.title || '');
-    const [title, setTitle] = useState(state?.desc || '');
+    const [value, setValue] = useState(state?.title || "");
+    const [title, setTitle] = useState(state?.desc || "");
     const [file, setFile] = useState(null);
-    const [cat, setCat] = useState(state?.cat || '');
+    const [cat, setCat] = useState(state?.cat || "");
 
     const upload = async () => {
 
@@ -30,7 +30,7 @@ const Write = () => {
 
     const handleClick = async e => {
         e.preventDefault()
-        const imgUrl = upload();
+        const imgUrl = await upload();
 
         try {
             state ? await axios.put(`/posts/${state.id}`, {
@@ -51,7 +51,7 @@ const Write = () => {
     return (
         <div className='add'>
             <div className='content'>
-                <input type="text" value={title} placeholder='Title' onChange={e => setCat(e.target.value)} />
+                <input type="text" value={title} placeholder='Title' onChange={e => setTitle(e.target.value)} />
                 <div className="editorContainer">
                     <ReactQuill className="editor" theme="snow" value={value} onChange={setValue} />
                 </div>
