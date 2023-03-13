@@ -14,11 +14,22 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, '../client/public/upload')
+    },
+    filename: function (req, file, cb) {
+      cb(null, Date.now()+file.originalname)
+    }
+  })
+  
 
-const upload = multer({ dets: 'uploads/' });
 
-app.post('/upload', upload.single('file'), function (req, res) {
-    res.status(200).json('Image has been uploaded!');
+const upload = multer({ storage });
+
+app.post('/api/upload', upload.single('file'), function (req, res) {
+    const file = req.file;
+    res.status(200).json(file.filename);
 
 })
 
