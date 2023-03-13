@@ -87,7 +87,7 @@ export const updatePost = (req, res) => {
             req.body.title,
             req.body.desc,
             req.body.img,
-            req.bod.cat,
+            req.body.cat,
             
         ];
 
@@ -95,6 +95,6 @@ export const updatePost = (req, res) => {
             if (err) {
                 return res.status(500).json(err)
             } return res.json('Post has been updated!')
-        })
+        });
     });
 }
