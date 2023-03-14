@@ -49,6 +49,10 @@ const Menu = ({cat}) => {
         
     // ];
 
+    const getText = (html) => {
+        const doc = new DOMParser().parseFromString(html, "text/html")
+        return doc.body.textContent
+    }
 
     return(
         <div className='menu'>
@@ -56,7 +60,7 @@ const Menu = ({cat}) => {
             {posts.map((post) => (
                 <div className='post' key={post.id}>
                     <img src={`../upload/${post.img}`} alt="" />
-                    <h2>{post.title}</h2>
+                    <h2>{getText(post.title)}</h2>
                     <button>Read More</button>
                 </div>
             ))}
