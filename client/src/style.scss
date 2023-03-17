@@ -34,7 +34,7 @@ $green: #26F9BC;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: $purple;
+            background-color: $lavender;
           
 
             h1 {
@@ -47,7 +47,7 @@ $green: #26F9BC;
                 display: flex;
                 flex-direction: column;
                 padding: 50px;
-                background-color: $jagBlue;
+                background-color: $purple;
                 width: 240px;
                 gap: 20px;
                 border-radius: 5px;
@@ -72,13 +72,13 @@ $green: #26F9BC;
                 }
 
                 button:hover {
-                    background-color: #BC8F8F;
-                    color: white;
+                    background-color: $yellow;
+                    color: black;
                 }
 
                 button:focus {
                     background-color: #FFDEAD;
-                    color: gray;
+                    color: black;
                 }
 
                 p {
