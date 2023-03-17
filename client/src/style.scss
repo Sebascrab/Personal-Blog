@@ -1,19 +1,23 @@
-$slateGray : rgb(119, 136, 153);
 
+// Neon Synthwave Color Palette
+
+$purple: #B939D9;
+$lavender: #7CA4FF;
+$blue: #0536B7;
+$blueGreen: #00DDFF;
+$jagBlue: #00C6FF;
+$pink: #E763BD;
+$yellow: #FACF31;
+$orange: #F99B1D;
+$green: #26F9BC;
 
 
 .app {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     
-    
-    
-    
-
-
-
     .container {
-        width: 1024px;
+        // width: 1024px;
         
         
 
@@ -30,12 +34,12 @@ $slateGray : rgb(119, 136, 153);
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: $slateGray;
+            background-color: $purple;
           
 
             h1 {
                 font-size: 39px;
-                color: #FFDEAD;
+                color: $yellow;
                 margin-bottom: 20px;
             }
 
@@ -43,25 +47,27 @@ $slateGray : rgb(119, 136, 153);
                 display: flex;
                 flex-direction: column;
                 padding: 50px;
-                background-color: #FFF5EE;
+                background-color: $jagBlue;
                 width: 240px;
                 gap: 20px;
-                border-radius: 2px;
+                border-radius: 5px;
+                border: 2px solid $yellow;
+                
 
 
                 input {
                     padding: 10px;
                     border: none;
                     border-bottom: 1px solid gray;
-                    background-color: #FFF5EE;
+                    background-color: $yellow;
                 }
 
                 button {
                     padding: 10px;
                     border: none;
                     border-radius: 3px;
-                    background-color: #FFDEAD;
-                    color: gray;
+                    background-color: $pink;
+                    color: $yellow;
                     cursor: pointer;
                 }
 
@@ -108,7 +114,7 @@ $slateGray : rgb(119, 136, 153);
                 .logo {
                     img {
                         width: 90px;
-                        background-color: $slateGray;
+                        background-color: $purple;
                         border: none;
                         border-radius: 10px;
                         margin-left: 20%;
@@ -134,7 +140,7 @@ $slateGray : rgb(119, 136, 153);
                     }
 
                     .write {
-                        background-color: $slateGray;
+                        background-color: $purple;
                         width: 70px;
                         height: 50px;
                         border-radius: 10px;
@@ -170,7 +176,7 @@ $slateGray : rgb(119, 136, 153);
 
             img {
                 width: 50px;
-                background-color: $slateGray;
+                background-color: $purple;
                 border: none;
                 border-radius: 10px;
                 margin-left: 5%;
@@ -239,7 +245,7 @@ $slateGray : rgb(119, 136, 153);
                             padding: 10px 20px;
                             border: none;
                             cursor: pointer;
-                            background-color: $slateGray;
+                            background-color: $purple;
                             font-weight: 300;
                             color: white;
                             border: 1px solid;
@@ -345,7 +351,7 @@ $slateGray : rgb(119, 136, 153);
                         padding: 10px 20px;
                         border: none;
                         cursor: pointer;
-                        background-color: $slateGray;
+                        background-color: $purple;
                         font-weight: 300;
                         color: white;
                         border: 1px solid;
