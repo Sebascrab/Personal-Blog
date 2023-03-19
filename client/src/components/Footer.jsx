@@ -5,7 +5,8 @@ const Footer = () => {
     return (
         <footer>
             
-            <p>made by sebastian </p>
+            <p>Blog Spot made by Sebastian Tischner</p>
+            <a href='https://github.com/Sebascrab'>GitHub</a>
         </footer>
     )
 }

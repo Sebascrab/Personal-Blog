@@ -15,9 +15,11 @@ $green: #26F9BC;
 .app {
     // display: flex;
     // justify-content: center;
+    background-color: $lavender;
     
     .container {
         // width: 1200px;
+        background-color: $purple;
         
         
 
@@ -113,6 +115,7 @@ $green: #26F9BC;
                 border-bottom-right-radius: 7px;
                 height: 150px;
                 border: 3px solid $yellow;
+                
                
 
 
@@ -182,13 +185,14 @@ $green: #26F9BC;
 
         footer {
             background-color: $lavender;
-            margin-top: 150px;
+            // margin-top: 150px;
             padding: 20px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
             font-size: 12px;
-            height: 150px;
+            height: 120px;
+            border: 2px solid $yellow;
            
             p {
                 display: flex;
@@ -210,27 +214,41 @@ $green: #26F9BC;
 
         .home{
 
+
             .posts{
                 margin-top: 50px;
+                margin-bottom: 40px;
                 margin-right: 5%;
                 margin-left: 5%;
                 display: flex;
                 flex-direction: column;
-                gap: 170px;
+                gap: 50px;
+                
+               
+                
 
 
                 .post{
                     display: flex;
+                    flex-direction: row-reverse;
                     gap: 120px;
+                    border: solid 3px $yellow;
+                    border-radius: 5px;
+                    background-color: $lavender;
+                    
 
 
-                    &:nth-child(2n+1){
-                        flex-direction: row-reverse;
-                    }
+                    // &:nth-child(2n+1){
+                    //     flex-direction: row;
+                    //     gap: 30%;
+                        
+                    // }
+
 
                     .img{
                         flex: 2;
                         position: relative;
+                        padding-top: 1%;
 
                         // &::after{
                         //     content: "";
@@ -244,10 +262,11 @@ $green: #26F9BC;
                         // }
 
                         img{
-                            width: 100%;
-                            height: 110%;
+                            width: 95%;
+                            height: 95%;
                             max-height: 400px;
                             object-fit: cover;
+                            
                         }
                     }
 
@@ -256,6 +275,7 @@ $green: #26F9BC;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+                        padding: 1%;
 
                         h1{
                             font-size: 48px;
