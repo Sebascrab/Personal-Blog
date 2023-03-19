@@ -17,9 +17,15 @@ $green: #26F9BC;
     // justify-content: center;
     background-color: $lavender;
     
+    
     .container {
         // width: 1200px;
         background-color: $purple;
+        
+        
+
+        
+        
         
         
 
@@ -114,7 +120,10 @@ $green: #26F9BC;
                 border-bottom-left-radius: 7px;
                 border-bottom-right-radius: 7px;
                 height: 150px;
-                border: 3px solid $yellow;
+                border: 2px solid $yellow;
+                border-bottom: 3px solid $yellow;
+                
+               
                 
                
 
@@ -191,8 +200,13 @@ $green: #26F9BC;
             align-items: center;
             justify-content: space-evenly;
             font-size: 12px;
-            height: 120px;
+            height: 80px;
             border: 2px solid $yellow;
+            border-top: 3px solid $yellow;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+            // background-repeat: repeat-x;
            
             p {
                 display: flex;
@@ -223,6 +237,8 @@ $green: #26F9BC;
                 display: flex;
                 flex-direction: column;
                 gap: 50px;
+                padding-bottom: 150px;
+                
                 
                
                 
@@ -235,6 +251,7 @@ $green: #26F9BC;
                     border: solid 3px $yellow;
                     border-radius: 5px;
                     background-color: $lavender;
+                    color: rgba(41, 31, 61, 0.9);
                     
 
 
@@ -249,6 +266,8 @@ $green: #26F9BC;
                         flex: 2;
                         position: relative;
                         padding-top: 1%;
+                        
+                        
 
                         // &::after{
                         //     content: "";
@@ -264,8 +283,11 @@ $green: #26F9BC;
                         img{
                             width: 95%;
                             height: 95%;
-                            max-height: 400px;
+                            max-height: 300px;
+                            max-width: 500px;
                             object-fit: cover;
+                            border-radius: 5px;
+                            border: 2px solid $yellow;
                             
                         }
                     }
@@ -420,22 +442,31 @@ $green: #26F9BC;
             margin-top: 20px;
             display: flex;
             gap: 20px;
+            padding-bottom: 450px;
+            background-color: $purple;
 
             .content{
                 flex: 5;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+                
 
                 input{
                     padding: 10px;
-                    border: 1px solid lightgray;
+                    border: 2px solid $yellow;
+                    background-color: $purple;
+                    color: rgba(41, 31, 61, 0.9);
+                }
+
+                input::placeholder{
+                    color: #fff;
                 }
 
                 .editorContainer{
                     height: 300px;
                     overflow: scroll;
-                    border: 1px solid lightgray;
+                    border: 2px solid $yellow;
 
                     .editor{
                         height: 100%;
