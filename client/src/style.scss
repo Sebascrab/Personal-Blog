@@ -460,6 +460,8 @@ $green: #26F9BC;
                     border-radius: 5px;
                     background-color: $lavender;
                     color: rgba(41, 31, 61, 0.9);
+                    height: 50px;
+                    font-size: 20px;
                 }
 
                 input::placeholder{
@@ -473,16 +475,19 @@ $green: #26F9BC;
                     background-color: $lavender;
                     border-radius: 5px;
                     
+                    
                    
 
                     .editor{
                         height: 100%;
                         border: none;
                         border: 1px solid $yellow;  
-                        border-radius: 5px;
-                                       
-                    }
-                }
+                        border-radius: 5px;    
+                        color: rgba(41, 31, 61, 0.9);
+                        
+                                 
+                    }                                    
+                }               
             }
 
             .menu{
@@ -520,6 +525,7 @@ $green: #26F9BC;
 
                     input {
                         font-size: 15px;
+                        
                     }
                     
 

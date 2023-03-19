@@ -61,7 +61,7 @@ const Write = () => {
             <div className='content'>
                 <input type="text" value={getText(title)} placeholder='Title' onChange={e => setTitle(e.target.value)} />
                 <div className="editorContainer">
-                    <ReactQuill className="editor" theme="snow" value={value} onChange={setValue} />
+                    <ReactQuill className="editor" theme="snow" placeholder='Blog Body' value={value} onChange={setValue} />
                 </div>
             </div>
             <div className='menu'>
