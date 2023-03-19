@@ -67,17 +67,19 @@ const Write = () => {
             <div className='menu'>
                 <div className="item">
                     <h1>Publish</h1>
-                    <span>
+                    {/* <span>
                         <b>Status: </b> Draft
                     </span>
                     <span>
                         <b>Visibility: </b> Public
-                    </span>
-                    <input style={{ display: "none" }} type="file" id="file" name="" onChange={e => setFile(e.target.files[0])} />
-                    <label className='file' htmlFor="file">Upload Image</label>
+                    </span> */}
+                    
+                    {/* <label className='file' htmlFor="file">Upload Image</label> */}
+                    <input type="file" id="file" name="" className='choose-file' onChange={e => setFile(e.target.files[0])} />
+                    <div></div>
                     <div className='buttons'>
-                        <button>Save as a draft</button>
-                        <button onClick={handleClick}>Publish</button>
+                        {/* <button>Save as a draft</button> */}
+                        <button onClick={handleClick}>Publish Blog</button>
                     </div>
                 </div>
                 <div className="item">
