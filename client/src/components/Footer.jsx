@@ -4,8 +4,8 @@ import Logo from '../images/Logo-Small.png'
 const Footer = () => {
     return (
         <footer>
-            <img src={Logo} alt="logo" />
-            <span>Made by Sebastian Tischner</span>
+            
+            <p>made by sebastian </p>
         </footer>
     )
 }
