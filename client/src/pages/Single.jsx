@@ -34,7 +34,7 @@ const Single = () => {
 
     const handleDelete = async () => {
         try {
-           await axios.delete(`/posts/${postId}`)
+            await axios.delete(`/posts/${postId}`)
             navigate('/')
         } catch (err) {
             console.log(err);
@@ -51,14 +51,14 @@ const Single = () => {
             <div className="content">
                 <img src={`../upload/${post?.img}`} alt="" />
                 <div className="user">
-                    {post.userImg && 
-                    <img 
-                    src={post.userImg} 
-                    alt="profile" />
+                    {post.userImg &&
+                        <img
+                            src={post.userImg}
+                            alt="profile" />
                     }
                     <div className="info">
                         <span>{post.username}</span>
-                        <p>Posted {moment(post.date).fromNow()}</p>
+                        <p className='posted'>Posted {moment(post.date).fromNow()}</p>
                     </div>
                     {currentUser.username === post.username && (
                         <div className="edit">
@@ -69,8 +69,10 @@ const Single = () => {
                         </div>
                     )}
                 </div>
-                <h1>{getText(post.title)}</h1>
-                <p>{getText(post.desc)}</p>
+                <div className='post-body'>
+                    <h1>{getText(post.title)}</h1>
+                    <p>{getText(post.desc)}</p>
+                </div>
             </div>
             <Menu cat={post.cat} />
         </div>
