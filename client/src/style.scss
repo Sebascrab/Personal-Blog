@@ -168,12 +168,25 @@ $green: #26F9BC;
                     margin-left: -5%;
                     margin-right: 5%;
                     font-size: 24px;
+                    
+                
 
                     span {
                         padding: 5%;
                         cursor: pointer;
+                        text-decoration: none;
 
+                        
 
+                    }
+                    .user-name {
+                        text-decoration: none;
+                        color: black;
+                        
+                    }
+
+                    .user-name:hover {
+                        color: red;
                     }
 
                     .write {
@@ -474,6 +487,15 @@ $green: #26F9BC;
             }
         }
 
+        // User
+
+        .user-page {
+            
+            .user-info {
+                
+            }
+        }
+
         // WRITE
 
         .add {
@@ -625,5 +647,7 @@ $green: #26F9BC;
                 }
             }
         }
+
+        
     }
 }
