@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation} from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Home = () => {
 
@@ -8,12 +8,12 @@ const Home = () => {
     const [posts, setPosts] = useState([]);
 
     const cat = useLocation().search
-    
-    
-    
+
+
+
     useEffect(() => {
         const fetchData = async () => {
-            try{
+            try {
                 const res = await axios.get(`/posts${cat}`)
                 setPosts(res.data);
             } catch (err) {
@@ -23,7 +23,7 @@ const Home = () => {
         fetchData();
     }, [cat]);
 
-  
+
 
     const getText = (html) => {
         const doc = new DOMParser().parseFromString(html, "text/html")
@@ -40,13 +40,15 @@ const Home = () => {
                         </div>
                         <div className="content">
                             <Link className='link' to={`/post/${post.id}`}>
-                            <h1>{getText(post.title)}</h1>
+                                <h1>{getText(post.title)}</h1>
                             </Link>
                             <p>{getText(post.desc)}</p>
-                            <button>Read More</button>
+                            <Link className='link' to={`/post/${post.id}`}>
+                                <button>Read More</button>
+                            </Link>
                         </div>
                     </div>
-                    ))}
+                ))}
             </div>
         </div>
     )

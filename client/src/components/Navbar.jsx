@@ -17,23 +17,23 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="links">
-                    <Link className='link' to="/?cat=art">
-                        <h6>Art</h6>
+                    <Link className='link' to="/?cat=lifestyle">
+                        <h6>Lifestyle</h6>
                     </Link>
-                    <Link className='link' to="/?cat=food">
-                        <h6>Food</h6>
+                    <Link className='link' to="/?cat=fitness">
+                        <h6>Fitness</h6>
                     </Link>
-                    <Link className='link' to="/?cat=science">
-                        <h6>Science</h6>
+                    <Link className='link' to="/?cat=coding">
+                        <h6>Coding</h6>
                     </Link>
-                    <Link className='link' to="/?cat=technology">
-                        <h6>Technology</h6>
+                    <Link className='link' to="/?cat=news">
+                        <h6>News</h6>
                     </Link>
-                    <Link className='link' to="/?cat=design">
-                        <h6>Design</h6>
+                    <Link className='link' to="/?cat=travel">
+                        <h6>Travel</h6>
                     </Link>
-                    <Link className='link' to="/?cat=cinema">
-                        <h6>Cinema</h6>
+                    <Link className='link' to="/?cat=interests">
+                        <h6>Interests</h6>
                     </Link>
                 </div>
                 <div className='user'>
