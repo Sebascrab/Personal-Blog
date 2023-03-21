@@ -28,7 +28,7 @@ const User = () => {
 
     return (
         <div className='user-page'>
-            <div className='user'>
+            <div className='user-posts'>
                 {posts.map((post) => (
                     <div className='post' key={post.id}>
                         <div className='img'>

@@ -491,8 +491,77 @@ $green: #26F9BC;
 
         .user-page {
             
-            .user-info {
-                
+            .user-posts {
+                margin-top: 50px;
+                margin-bottom: 40px;
+                margin-right: 5%;
+                margin-left: 5%;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                padding-bottom: 150px;
+
+                .post {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    gap: 120px;
+                    border: solid 3px $yellow;
+                    border-radius: 5px;
+                    background-color: $lavender;
+                    color: rgba(41, 31, 61, 0.9);
+
+                    .img {
+                        flex: 2;
+                        position: relative;
+                        padding-top: 1%;
+
+                        img {
+                            width: 95%;
+                            height: 95%;
+                            max-height: 300px;
+                            max-width: 500px;
+                            object-fit: cover;
+                            border-radius: 5px;
+                            border: 2px solid $yellow;
+                        }
+                    }
+
+                    .content {
+                        flex: 3;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 1%;
+
+                        h1 {
+                            font-size: 48px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                        }
+
+                        button {
+                            width: max-content;
+                            padding: 10px 20px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: $purple;
+                            font-weight: 300;
+                            color: white;
+                            border: 1px solid $yellow;
+                            border-radius: 5px;
+
+                            &:hover {
+
+                                background-color: $yellow;
+                                color: #000;
+                                border: 1px solid $purple;
+
+                            }
+                        }
+                    }
+                }
             }
         }
 
