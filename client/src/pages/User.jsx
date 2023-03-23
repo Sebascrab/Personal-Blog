@@ -20,7 +20,7 @@ const User = () => {
         fetchData();
     }, [])
 
-    
+
 
 
 
@@ -60,14 +60,16 @@ const User = () => {
                         <h3>Sebastain Tischner</h3>
                         <h5>Username: Sebascrab</h5>
                         <h5>alexanders.tischner@outlook.com</h5>
-                        <button>Edit</button>
+                        <Link to='/edit'>
+                            <button>Edit</button>
+                        </Link>
                     </div>
                 </div>
             </div>
 
         </div>
     )
-                
+
 }
 
 export default User
