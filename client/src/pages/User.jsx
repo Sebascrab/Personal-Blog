@@ -30,11 +30,11 @@ const User = () => {
         <div className='user-page'>
             <div className='user-posts'>
                 {posts.map((post) => (
-                    <div className='post' key={post.id}>
-                        <div className='img'>
+                    <div className='user-post' key={post.id}>
+                        <div className='post-img'>
                             <img src={`../upload/${post.img}`} alt=""/>
                         </div>
-                        <div className='content'>
+                        <div className='post-content'>
                             <Link className='link' to={`/post/${post.id}`}>
                                 <h1>{getText(post.title)}</h1>
                             </Link>
