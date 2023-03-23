@@ -7,24 +7,24 @@ const Edit = () => {
             <div className='edit-container'>
                 <img className='edit-img' src={profilePic} />
                 <div className="profile-info">
-                <form>
-                    <label>
-                        Name:
+                <form className='profile-form'>
+                    <label className='edit-label'>
+                        Name
                         <input type='text' required></input>
                     </label>
-                    <label>
-                        Username:
+                    <label className='edit-label'>
+                        Username
                         <input type='text' required></input>
                     </label>
-                    <label>
-                        Password:
+                    <label className='edit-label'>
+                        Password
                         <input type='text' required></input>
                     </label>
-                    <label>
-                        email:
+                    <label className='edit-label'>
+                        Email
                         <input type='email' required></input>
                     </label>
-                    <button>Save Changes</button>
+                    <button className='save-btn'>Save Changes</button>
                 </form>
                 </div>
             </div>
