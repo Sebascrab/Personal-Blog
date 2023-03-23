@@ -490,11 +490,13 @@ $green: #26F9BC;
         // User
 
         .user-page {
-            
+            display: flex;
+            flex-direction: row;
+
             .user-posts {
                 margin-top: 50px;
                 margin-bottom: 40px;
-                margin-right: 5%;
+                // margin-right: 5%;
                 margin-left: 5%;
                 display: flex;
                 flex-direction: column;
@@ -509,7 +511,7 @@ $green: #26F9BC;
                     border-radius: 5px;
                     background-color: $lavender;
                     color: rgba(41, 31, 61, 0.9);
-                    max-width: 45%;
+                    
                     padding: 1%;
 
                     .post-img {
@@ -563,6 +565,66 @@ $green: #26F9BC;
                             }
                         }
                     }
+                }
+            }
+            .user-info {
+                margin-top: 3%;
+                margin-left: 5%;
+                margin-right: 5%;
+
+                .profile-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border: 2px solid $yellow;
+                    border-radius: 5px;
+                    background-color: $lavender;
+    
+                    .profile-img {
+                        max-width: 35%;
+                        border: 2px solid $yellow;
+                        border-radius: 5%;
+                        margin: 5%;
+                    }
+
+                    .profile-info{
+                        border: 2px solid $yellow;
+                        border-radius: 5px;
+                        padding: 5%;
+                        margin-bottom: 5%;
+                        // background-color: $purple;
+
+
+                        h3 {
+                            font-size: 40px;
+                            color: #000;
+                        }
+
+                        h5 {
+                            font-size: 25px;
+                            color: #000;
+                        }
+
+                        button {
+                            width: 30%;
+                            height: 35px;
+                            border: 1px solid yellow;
+                            border-radius: 5px;
+                            color: #fff;
+                            background-color: $purple;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #000;
+                                background-color: $yellow;
+                                border: 1px solid $purple;
+
+                            }
+                        }
+                    }
+
+                    
+    
                 }
             }
         }
