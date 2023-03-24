@@ -21,14 +21,14 @@ db.query(q, [req.body.email, req.body.username], (err, data) => {
 
     // Taking user input and storing in db
 
-    const q = "INSERT INTO users(`username`, `email`, `password`) VALUES (?)";
+    const q = "INSERT INTO users(`username`, `email`, `password`, `firstName`, `lastName`) VALUES (?)";
     const values = [
         req.body.username,
         req.body.email, 
         hash,
-    ];
+    ];  
 
-    db.query(q, [values], (err, data) => {
+    db.query(q, [values], (err, data) => { 
         if (err) {
             return res.json(err);
         } return res.status(200).json("User has successfuly created!")
