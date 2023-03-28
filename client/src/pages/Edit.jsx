@@ -14,7 +14,7 @@ const Edit = () => {
     const [err, setError] = useState(null);
     const navigate = useNavigate()
     const handleChange = e => {
-        setInputs(prev => ({prev, [e.target.name]: e.target.value}))
+        setInputs(prev => ({...prev, [e.target.name]: e.target.value}))
     }
 
     const handleSubmit = async e => {
@@ -35,15 +35,15 @@ const Edit = () => {
                 <form className='profile-form'>
                     <label className='edit-label'>
                         Name
-                        <input type='text' required></input>
+                        <input type='text' name="name" required onChange={handleChange}></input>
                     </label>
                     <label className='edit-label'>
                         Username
-                        <input type='text' required></input>
+                        <input type='text' name="username" required onChange={handleChange}></input>
                     </label>
                     <label className='edit-label'>
                         Email
-                        <input type='email' required></input>
+                        <input type='email' name='email' required onChange={handleChange}></input>
                     </label>
                     <Link to="/user">
                     <button  onClick={handleSubmit} className='save-btn'>Save Changes</button>

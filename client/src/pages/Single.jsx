@@ -63,9 +63,13 @@ const Single = () => {
                     {currentUser.username === post.username && (
                         <div className="edit">
                             <Link to={`/write?edit=2`} state={post} >
-                                <img src={Edit} alt="edit button" />
+                                <button className='edit-btn'>
+                                    Edit
+                                </button>
                             </Link>
-                            <img onClick={handleDelete} src={Delete} alt="delete button" />
+                            <button classname="delete-btn" onClick={handleDelete}>
+                                Delete
+                            </button>
                         </div>
                     )}
                 </div>
