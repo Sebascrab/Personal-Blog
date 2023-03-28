@@ -1,7 +1,32 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import profilePic from '../images/Sebas-dog.jpeg';
 
 const Edit = () => {
+
+    const [inputs, setInputs] = useState({
+        name: "",
+        username: "",
+        email: "",  
+    });
+
+    const [err, setError] = useState(null);
+    const navigate = useNavigate()
+    const handleChange = e => {
+        setInputs(prev => ({prev, [e.target.name]: e.target.value}))
+    }
+
+    const handleSubmit = async e => {
+        e.preventDefault()
+        try {
+            await axios.put("/users/updateUser", inputs)
+            navigate('/user');
+        } catch (err) {
+            setError(err.response.data)
+        }
+    }
+
     return (
         <div className='edit'>
             <div className='edit-container'>
@@ -17,14 +42,12 @@ const Edit = () => {
                         <input type='text' required></input>
                     </label>
                     <label className='edit-label'>
-                        Password
-                        <input type='text' required></input>
-                    </label>
-                    <label className='edit-label'>
                         Email
                         <input type='email' required></input>
                     </label>
-                    <button className='save-btn'>Save Changes</button>
+                    <Link to="/user">
+                    <button  onClick={handleSubmit} className='save-btn'>Save Changes</button>
+                    </Link>
                 </form>
                 </div>
             </div>
