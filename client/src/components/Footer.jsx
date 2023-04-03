@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer>
             
-            <p>Blog Spot made by Sebastian Tischner</p>
-            <a href='https://github.com/Sebascrab'>GitHub</a>
+            <p>This blog application was made by &nbsp;<a href='https://github.com/Sebascrab'>Sebastian Tischner </a></p>
+            
         </footer>
     )
 }

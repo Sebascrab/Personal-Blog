@@ -575,8 +575,8 @@ $gray: #4C4E52;
                     gap: 35px;
                     border: solid 3px $yellow;
                     border-radius: 5px;
-                    background-color: $lavender;
-                    color: rgba(41, 31, 61, 0.9);
+                    background-color: $gray;
+                    color: $yellow;
 
                     padding: 1%;
 
@@ -645,46 +645,51 @@ $gray: #4C4E52;
                     align-items: center;
                     border: 2px solid $yellow;
                     border-radius: 5px;
-                    background-color: $lavender;
+                    background-color: $gray;
+                    width: 100%;
 
-                    .profile-img {
-                        max-width: 35%;
-                        border: 2px solid $yellow;
-                        border-radius: 5%;
-                        margin: 5%;
+                    span {
+                        color: $yellow;
+                        font-size: 30px;
+                        
                     }
+                    
 
                     .profile-info {
-                        border: 2px solid $yellow;
-                        border-radius: 5px;
+                        // border: 2px solid $yellow;
+                        // border-radius: 5px;
                         padding: 5%;
                         margin-bottom: 5%;
-                        // background-color: $purple;
+                        padding-left: 5%;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        // // background-color: $purple;
 
 
                         h3 {
-                            font-size: 40px;
-                            color: rgba(41, 31, 61);
+                            font-size: 35px;
+                            color: $yellow;
                         }
 
                         h5 {
-                            font-size: 25px;
-                            color: rgba(41, 31, 61);
+                            font-size: 30px;
+                            color: $yellow;
                         }
 
                         button {
                             width: 30%;
                             height: 35px;
-                            border: 1px solid yellow;
+                            border: 1px solid #000;
                             border-radius: 5px;
-                            color: #fff;
-                            background-color: $purple;
+                            color: #000;
+                            background-color: $yellow;
                             cursor: pointer;
+                            margin-left: 5%;
 
                             &:hover {
                                 color: #000;
                                 background-color: $yellow;
-                                border: 1px solid $purple;
+                                border: 1px solid #000;
 
                             }
                         }

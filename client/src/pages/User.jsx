@@ -72,7 +72,7 @@ const User = () => {
             </div>
             <div className='user-info'>
                 <div className='profile-container'>
-                    <img className='profile-img' src={profilePic} />
+                    <span>User Info</span>
                         {users.map((user) => (
                     <div className="profile-info">
                             
