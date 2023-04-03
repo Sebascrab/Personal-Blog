@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Sebascrab/Personal-Blog#readme",
   "dependencies": {
-    "react-tsparticles": "^2.9.3"
+    "react-tsparticles": "^2.9.3",
+    "serve": "^14.2.0"
   }
 }
