@@ -162,8 +162,13 @@ $gray: #4C4E52;
                         font-weight: 300;
                         margin-left: 50px;
                         margin-right: 50px;
+
+                        &:hover {
+                            color: $lavender;
+                        }
                     }
 
+                    
 
                 }
 
@@ -179,7 +184,9 @@ $gray: #4C4E52;
                         cursor: pointer;
                         text-decoration: none;
 
-                        
+                        &:hover {
+                            color: red;
+                        }
 
                     }
                     .user-name {
@@ -197,17 +204,17 @@ $gray: #4C4E52;
                     }
 
                     .write {
-                        border: 1px solid $yellow;
+                        border: 1px solid #000;
                         border-radius: 5px;
-                        background-color: $purple;
+                        background-color: $yellow;
                         margin-left: 50px;
-                        color: #fff;
+                        color: #000;
 
                         &:hover {
 
-                            background-color: $yellow;
+                            background-color: gray;
                             color: #000;
-                            border: 1px solid $purple;
+                            border: 1px solid $yellow;
                         }
                     }
                 }
@@ -217,7 +224,7 @@ $gray: #4C4E52;
         // FOOTER 
 
         footer {
-            background-color: $lavender;
+            background-color: $gray;
             // margin-top: 150px;
             padding: 20px;
             display: flex;
@@ -275,7 +282,7 @@ $gray: #4C4E52;
                     gap: 120px;
                     border: solid 3px $yellow;
                     border-radius: 5px;
-                    background-color: $lavender;
+                    background-color: $gray;
                     color: rgba(41, 31, 61, 0.9);
 
 
@@ -326,18 +333,20 @@ $gray: #4C4E52;
 
                         h1 {
                             font-size: 48px;
+                            color: $yellow;
                         }
 
                         p {
                             font-size: 18px;
+                            color: black;
                         }
 
                         button {
                             width: max-content;
-                            padding: 10px 20px;
+                            padding: 15px 20px;
                             border: none;
                             cursor: pointer;
-                            background-color: $purple;
+                            background-color: gray;
                             font-weight: 300;
                             color: white;
                             border: 1px solid $yellow;
@@ -347,7 +356,7 @@ $gray: #4C4E52;
 
                                 background-color: $yellow;
                                 color: #000;
-                                border: 1px solid $purple;
+                                border: 1px solid #000;
 
                             }
                         }
@@ -384,7 +393,7 @@ $gray: #4C4E52;
                     gap: 10px;
                     font-size: 16px;
                     margin-left: 2%;
-                    border: solid 2px $yellow;
+                    // border: solid 2px $yellow;
                     border-radius: 5px;
                     padding-left: 1%;
                     padding-top: 1%;
@@ -401,26 +410,47 @@ $gray: #4C4E52;
                     span {
                         font-weight: bold;
                         font-size: 30px;
+                        color: $yellow;
                     }
 
                     .posted {
                         font-size: 15px;
                         padding-left: 15px;
                         padding-right: 15px;
+                        color: $yellow;
                     }
+
+                    .edit-btn {
+                        color: #000;
+                        border: solid 1px #000;
+                        background-color: $yellow;
+
+                        &:hover {
+                            color: #000;
+                            background-color: gray;
+                            border: 1px solid $yellow;
+                        }
+                    }
+
+                    .delete-btn {
+                        color: #000;
+                        border: solid 1px #000;
+                        background-color: $yellow;
+
+                        &:hover {
+                            color: #000;
+                            background-color: gray;
+                            border: 1px solid $yellow;
+                        }
+                    }
+
+                    
                 }
 
-                .edit {
-                    display: flex;
-                    gap: 5;
-
-
-                    img {
-                        width: 20px;
-                        height: 20px;
-                        cursor: pointer;
-                    }
-                }
+                // .edit {
+                  
+                   
+                // }
 
                 .post-body {
                     border: 2px solid $yellow;

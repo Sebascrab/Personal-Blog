@@ -67,7 +67,7 @@ const Single = () => {
                                     Edit
                                 </button>
                             </Link>
-                            <button classname="delete-btn" onClick={handleDelete}>
+                            <button className="delete-btn" onClick={handleDelete}>
                                 Delete
                             </button>
                         </div>
