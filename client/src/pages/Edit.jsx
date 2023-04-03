@@ -30,6 +30,7 @@ const Edit = () => {
     return (
         <div className='edit'>
             <div className='edit-container'>
+                <h1>User Info</h1>
                 <img className='edit-img' src={profilePic} />
                 <div className="profile-info">
                 <form className='profile-form'>

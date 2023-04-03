@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer>
             
-            <p>This blog application was made by &nbsp;<a href='https://github.com/Sebascrab'>Sebastian Tischner </a></p>
+            <p className='footer'>This blog application was made by &nbsp;<a href='https://github.com/Sebascrab'>Sebastian Tischner </a></p>
             
         </footer>
     )
