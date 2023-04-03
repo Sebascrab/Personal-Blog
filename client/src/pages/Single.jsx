@@ -2,8 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import Menu from '../components/Menu'
 
-import Edit from '../images/Edit-Icon.png';
-import Delete from '../images/Delete-Icon-3.jpeg';
+
 import axios from 'axios';
 import moment from 'moment';
 import { AuthContext } from '../context/authContext';
@@ -41,6 +40,9 @@ const Single = () => {
         }
     }
 
+    
+   
+
     const getText = (html) => {
         const doc = new DOMParser().parseFromString(html, "text/html")
         return doc.body.textContent
@@ -57,7 +59,8 @@ const Single = () => {
                             alt="profile" />
                     }
                     <div className="info">
-                        <span>{post.username}</span>
+                        <span>{post.name}</span><br></br>
+                        <span className='user-name'>@{post.username}</span>
                         <p className='posted'>Posted {moment(post.date).fromNow()}</p>
                     </div>
                     {currentUser.username === post.username && (
